@@ -32,5 +32,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c"
-  }
+  },
+  "version": "0.0.1"
 }
