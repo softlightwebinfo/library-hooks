@@ -1,0 +1,11 @@
+.Input {
+    border: 1px solid gainsboro;
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Input:hover {
+    border: 1px solid gainsboro;
+}

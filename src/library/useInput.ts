@@ -1,6 +1,6 @@
 import {useCallback, useState} from "react";
 
-export const useInput = (value: string) => {
+export const useInput = (value?: string) => {
     const [state, setState] = useState(value);
 
     const onChange = useCallback((evt) => {
