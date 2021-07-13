@@ -5,6 +5,10 @@
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
+  "author": "Rafa Gonzalez Muñoz",
+  "repository": {
+    "url": "https://github.com/softlightwebinfo/library-hooks"
+  },
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
     "@babel/core": "^7.14.6",
