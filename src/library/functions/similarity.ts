@@ -1,0 +1,1 @@
+export const similarity = (arr1: any[], arr2: any[]) => arr1.filter(v => arr2.includes(v));
