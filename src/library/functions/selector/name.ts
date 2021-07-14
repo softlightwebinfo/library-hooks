@@ -1,0 +1,1 @@
+export const $name = (name: string) => name ? document.getElementsByName(name) : [];

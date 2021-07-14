@@ -1,0 +1,1 @@
+export const trim = (value: any) => value.toString().replace(/^\s+|\s+$/g, '');

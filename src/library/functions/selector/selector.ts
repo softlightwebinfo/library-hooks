@@ -1,0 +1,1 @@
+export const $ = (query: string) => document.querySelectorAll(query);

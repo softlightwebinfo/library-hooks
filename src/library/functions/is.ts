@@ -1,0 +1,1 @@
+export const isInteger = (value: any) => /^[0-9]{1,}$/.test(value);
