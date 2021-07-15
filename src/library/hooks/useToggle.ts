@@ -1,7 +1,7 @@
 import {useCallback, useState} from "react";
-
+import {TRsUseToggle} from "../interfaces/useToggle";
 // Parameter is the boolean, with default "false" value
-export const useToggle = (initialState = false) => {
+export const useToggle = (initialState = false): TRsUseToggle => {
     const [state, setState] = useState(initialState);
 
     const toggle = useCallback(() => setState(state => !state), []);
