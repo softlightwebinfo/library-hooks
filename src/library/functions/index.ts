@@ -58,3 +58,4 @@ export * from './placementPolyfill';
 export * from './previewFile';
 export * from './reactToString';
 export * from './reactTplTransform';
+export * from './generate';
