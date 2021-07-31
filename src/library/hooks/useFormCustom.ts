@@ -23,6 +23,18 @@ export const useFormCustom = <T extends Record<keyof T, any> = {}>(options?: {
         });
     };
 
+    const handleChangeValue = <S extends unknown>(
+        key: keyof T,
+        sanitizeFn?: (value: string) => S
+    ) => (e: any) => {
+        const value = sanitizeFn?.(e) ?? e;
+        options?.onChange?.(key, value);
+        setData({
+            ...data,
+            [key]: value,
+        });
+    };
+
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const validations = options?.validations;
@@ -66,6 +78,7 @@ export const useFormCustom = <T extends Record<keyof T, any> = {}>(options?: {
     return {
         data,
         handleChange,
+        handleChangeValue,
         handleSubmit,
         errors,
     };
