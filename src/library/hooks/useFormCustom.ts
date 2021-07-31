@@ -17,10 +17,10 @@ export const useFormCustom = <T extends Record<keyof T, any> = {}>(options?: {
     ) => (e: ChangeEvent<HTMLInputElement & HTMLSelectElement>) => {
         const value = sanitizeFn?.(e.target.value) ?? e.target.value;
         options?.onChange?.(key, value);
-        setData({
-            ...data,
+        setData(prv => ({
+            ...prv,
             [key]: value,
-        });
+        }));
     };
 
     const handleChangeValue = <S extends unknown, TP extends unknown>(
@@ -29,10 +29,10 @@ export const useFormCustom = <T extends Record<keyof T, any> = {}>(options?: {
     ) => (e: any) => {
         const value = sanitizeFn?.(e) ?? e;
         options?.onChange?.(key, value);
-        setData({
-            ...data,
+        setData(prv => ({
+            ...prv,
             [key]: value,
-        });
+        }));
     };
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
