@@ -23,7 +23,7 @@ export const useFormCustom = <T extends Record<keyof T, any> = {}>(options?: {
         });
     };
 
-    const handleChangeValue = <S extends unknown, TP extends string>(
+    const handleChangeValue = <S extends unknown, TP extends unknown>(
         key: keyof T,
         sanitizeFn?: (value: TP) => S
     ) => (e: any) => {
