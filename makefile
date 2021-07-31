@@ -1,5 +1,4 @@
 build:
-	yarn cli
 	yarn build
 	yarn deploy-storybook
 	yarn publish --registry http://musicosdelmundo.com:4873
