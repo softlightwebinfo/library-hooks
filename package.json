@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/library-hooks",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "The project was developer for anyone people need the  react hooks.",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
