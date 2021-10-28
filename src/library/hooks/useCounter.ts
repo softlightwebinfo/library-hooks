@@ -5,6 +5,7 @@ export function useCounter(val: number, step: number) {
 
     const increment = () => setCount(count + step);
     const decrement = () => setCount(count - step);
+    const handlerCount = (evt: any) => setCount(Number(evt.target.value));
 
-    return [count, increment, decrement];
+    return [count, increment, decrement, {setCount, handlerCount}];
 }
