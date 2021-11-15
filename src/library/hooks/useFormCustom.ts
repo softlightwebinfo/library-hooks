@@ -75,11 +75,17 @@ export const useFormCustom = <T extends Record<keyof T, any> = {}>(options?: {
         }
     };
 
+    const handleClear = () => {
+        setData({} as T);
+        setErrors({} as ErrorRecord<T>);
+    }
+
     return {
         data,
         handleChange,
         handleChangeValue,
         handleSubmit,
         errors,
+        handleClear,
     };
 };
